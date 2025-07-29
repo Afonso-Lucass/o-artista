@@ -1,16 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poppins&display=swap');
 
 body {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-header, #principal, #second, #contato, #stream {
-	
+h1, h2, h3 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.5em;
 }
 
-.link-menu {
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  height: 60px;
+}
+
+#menu {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+}
+
+.item-menu a {
+  text-decoration: none;
   color: #fff;
   background-color: #555;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.link-menu.f {
+  background-color: #5b305a;
+}
+
+.link-menu.l {
+  background-color: #e49756;
+}
+
+.link-menu.m {
+  background-color: #e04b5a;
 }
 
 .f {
@@ -26,20 +59,143 @@ header, #principal, #second, #contato, #stream {
 }
 
 main {
-  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
   color: #ddd;
+  background-color: #333;
 }
 
-h1, h2 {
-  font-family: 'Amatic SC';
-}
-
-#second a{
+main.f,
+main.l,
+main.m {
   color: #fff;
+}
+
+#principal {
+  display: flex;
+  gap: 40px;
+  max-width: 1100px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#capa {
+  max-width: 300px;
+  height: auto;
+  border-radius: 5px;
+}
+
+#sec_ctd {
+  max-width: 600px;
+}
+
+#sec_ctd p {
+  line-height: 1.6;
+}
+
+#second {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+}
+
+#descricao, #acesso {
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 300px;
+  text-align: center;
+}
+
+#acesso.f {
+  background-color: #5b305a;
+  color: #fff;
+}
+
+#acesso.l {
+  background-color: #e49756;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#acesso.m {
+  background-color: #e04b5a;
+  color: #fff;
+}
+
+#acesso.l a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: white;
+  color: #e49756;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: 'Amatic SC';
+  font-size: 22px;
+}
+
+#acesso.m a img {
+  height: 40px;
+  margin: 0 10px;
+}
+
+#descricao ol, #descricao ul {
+  text-align: left;
+}
+
+.cartaz {
+  display: inline-block;
+  margin: 20px;
+}
+
+.capa {
+  height: 300px;
+  width: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.capa:hover {
+  transform: scale(1.05);
 }
 
 footer {
   background-color: #333;
   color: #ddd;
+  padding: 20px;
+  text-align: center;
 }
 
+#contato {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+#email a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+#social img {
+  height: 24px;
+  margin: 0 5px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#logo img {
+  height: 80px;
+}
